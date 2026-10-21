@@ -53,18 +53,57 @@ During this week, I learned more about how the VGA signals work and how Verilog 
 Next week, I plan to start modifying the original design to display my own image. I have chosen a simple Kawaii Kitty design with a pink background and a white cat face.
 
 ## **Template VGA Design**
-### **Project Set-Up**
-Summarise the project set-up and design flow. Include a screenshot of your own set-up, for example see the image of my Project Summary window below. Guideline 1 short paragraph.
 
-<img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/VGAPrjSum.png">
-### **Template Code**
-Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
-### **Simulation**
-Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
-### **Synthesis**
-Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
-### **Demonstration**
-Perhaps add a picture of your demo. Guideline: 1/2 sentences.
+### Project Set-Up
+
+I started by creating a new project in Vivado 2025.1.
+I selected the Basys3 FPGA device (xc7a35tcpg236-1)
+and added the Verilog files provided by the lecturer.
+
+I also added the Basys3 constraints file and configured
+the Clocking Wizard to generate a 25 MHz clock from
+the 100 MHz input clock.
+
+### Template Code
+
+The original design uses three main Verilog modules:
+
+- VGATop connects the different modules together.
+- VGASync controls the VGA timing and synchronization.
+- ColourStripes controls the colours displayed on the screen.
+
+The design displays eight vertical colour stripes
+on a 640 x 480 VGA monitor.
+
+### Simulation
+
+I added the testbench provided by the lecturer and
+ran the Behavioral Simulation in Vivado.
+
+I observed signals such as clk, hsync, vsync,
+row, col and the RGB outputs.
+
+This helped me understand how the VGA timing
+and colour signals work.
+
+### Synthesis and Implementation
+
+After simulation, I ran synthesis and implementation
+in Vivado.
+
+I checked the implementation results and timing summary.
+The timing report showed no failing endpoints.
+
+### Demonstration
+
+I generated the bitstream and programmed the Basys3
+FPGA board.
+
+I connected the board to a VGA monitor and successfully
+displayed the original eight colour stripes.
+
+This confirmed that the original VGA design was working
+on the FPGA board.
 
 ## **My VGA Design Edit**
 Introduce your own design idea. Consider how complex/achievabble this might be or otherwise. Reference any research you do online (use hyperlinks).
