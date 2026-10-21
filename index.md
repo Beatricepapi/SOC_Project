@@ -5,9 +5,25 @@ tags: fpga vga verilog
 categories: demo
 ---
 
-Add a short welcome message or introduction here. Aim to get the viewer interested in what follows! Guideline: 1 or 2 sentences. 
+Welcome to my FPGA VGA Driver Project! In this project, I will be using Verilog and Vivado 2025.1 to display graphics on a VGA monitor using the Basys3 FPGA board. I will first test the example provided by the lecturer and then create my own design.
 
-I am adding a test sentence here at 13:24 on 03/12/24.
+## Weekly Progress
+
+### Week 1 – Project Setup and VGA Colour Stripes
+
+This week, I started my FPGA VGA project in Vivado 2025.1. First, I created a new project and selected the Basys3 FPGA device. I added the Verilog files provided by the lecturer, including VGATop, VGASync and VGAColourStripes.
+
+I also configured the Clocking Wizard to generate a 25 MHz clock from the 100 MHz input clock.
+
+After setting up the project, I added the testbench and ran the Behavioral Simulation. I looked at the waveforms and observed the clock, synchronization signals, row and column positions, and RGB colour outputs.
+
+Next, I ran synthesis and implementation. I checked the timing summary, which showed no failing endpoints. I then tested the original design on the Basys3 board and displayed the colour stripes on the VGA monitor.
+
+During this week, I learned more about how the VGA signals work and how Verilog can be used to display different colours on a screen.
+
+### Next Week
+
+Next week, I plan to start modifying the original design to display my own image. I have chosen a simple Kawaii Kitty design with a pink background and a white cat face.
 
 ## **Template VGA Design**
 ### **Project Set-Up**
