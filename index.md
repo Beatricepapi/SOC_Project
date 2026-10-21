@@ -21,25 +21,27 @@ Next, I ran synthesis and implementation. I checked the timing summary, which sh
 
 During this week, I learned more about how the VGA signals work and how Verilog can be used to display different colours on a screen.
 
-<img width="450" alt="Colour Stripes displayed on VGA monitor" src="https://github.com/user-attachments/assets/9cb5cc04-3e07-4abe-b90d-b89c19be4825">
+### VGA Colour Stripes Demonstration
+
+<img width="450" alt="VGA Colour Stripes" src="docs/assets/images/VGA_Stripes.jpeg">
 
 *Figure 1: Original VGA Colour Stripes design displayed on the monitor using the Basys3 FPGA board.*
 
 ### Vivado Project Summary
 
-![Vivado Project Summary](docs/assets/images/Vivado_Project_Summary.png)
+![Vivado Project Summary](docs/assets/images/Project_Summary.png)
 
-*Figure 2: Vivado project setup showing the Basys3 FPGA and design sources.*
+*Figure 2: Vivado project setup showing the Basys3 FPGA device and design sources.*
 
 ### Behavioral Simulation
 
-![Behavioral Simulation](docs/assets/images/Vivado_Behavioral_Simulation.png)
+![Behavioral Simulation](docs/assets/images/Simulation.png)
 
-*Figure 3: Behavioral simulation showing VGA timing and RGB signals.*
+*Figure 3: Behavioral simulation showing VGA timing signals and RGB colour outputs.*
 
 ### Implementation Results
 
-![Implementation Results](docs/assets/images/Vivado_Implementation.png)
+![Implementation Results](docs/assets/images/Implementation.png)
 
 *Figure 4: Implemented FPGA design and timing summary in Vivado.*
 
