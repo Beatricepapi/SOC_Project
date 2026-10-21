@@ -21,6 +21,9 @@ Next, I ran synthesis and implementation. I checked the timing summary, which sh
 
 During this week, I learned more about how the VGA signals work and how Verilog can be used to display different colours on a screen.
 
+<img width="1152" height="1536" alt="image" src="https://github.com/user-attachments/assets/9cb5cc04-3e07-4abe-b90d-b89c19be4825" />
+
+
 ### Next Week
 
 Next week, I plan to start modifying the original design to display my own image. I have chosen a simple Kawaii Kitty design with a pink background and a white cat face.
