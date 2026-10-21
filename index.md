@@ -29,19 +29,19 @@ During this week, I learned more about how the VGA signals work and how Verilog 
 
 ### Vivado Project Summary
 
-![Vivado Project Summary](docs/assets/images/Project_Summary.png)
+<img width="450" alt="Vivado Project Summary" src="docs/assets/images/Project_Summary.png">
 
 *Figure 2: Vivado project setup showing the Basys3 FPGA device and design sources.*
 
 ### Behavioral Simulation
 
-![Behavioral Simulation](docs/assets/images/Simulation.png)
+<img width="450" alt="Behavioral Simulation" src="docs/assets/images/Simulation.png">
 
 *Figure 3: Behavioral simulation showing VGA timing signals and RGB colour outputs.*
 
 ### Implementation Results
 
-![Implementation Results](docs/assets/images/Implementation.png)
+<img width="450" alt="Implementation Results" src="docs/assets/images/Implementation.png">
 
 *Figure 4: Implemented FPGA design and timing summary in Vivado.*
 
