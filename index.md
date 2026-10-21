@@ -30,7 +30,7 @@ During this week, I learned more about how the VGA signals work and how Verilog 
 
 <h3>Vivado Project Summary</h3>
 
-<img width="2338" height="1634" alt="uXx_akLOufUzVUkRnU1vwNVACZeSAjMpFdIfNVxT3Tr_T1qYW2_RTU-ZBU28nUFVAPRzlk3Rd5N7lNQNU4s1dIwFnapXRPYFRhTyp4cyCA0gA4fZgk8JQkd3mAvyCqdm6OscXWESXklaAtg3UjLYmcmMBaMY3PANp376BxGXUce-WrWYqSmXu_jp_uG-g8p3" src="https://github.com/user-attachments/assets/5b170ab6-e71e-4094-9d52-fc7e1a643cfe" />
+<img width="1133" height="812" alt="1fTFaEEZfAZf8o-K7ie1J2-ABHxeoi-gRVWdpIR5gU_VrMlCiS5aErv_JjZi6kfMAouOKKePDbmouzWPwAqHhTKaNymglGwZ0DwIkDldsk_7lhFLANX_VNYiDplmY9gewioNc-toD7EK9D5fQT0IYiHThnx_nEzcNcl9i8-Nwmzv_tQE_M75bmiZ5thrSlrC" src="https://github.com/user-attachments/assets/dd350128-546d-4699-bd14-1e07bd0900a3" />
 
 <p><i>Figure 2: Vivado project setup and design sources.</i></p>
 
