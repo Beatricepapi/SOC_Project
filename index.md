@@ -36,13 +36,13 @@ During this week, I learned more about how the VGA signals work and how Verilog 
 
 <h3>Behavioral Simulation</h3>
 
-<img width="450" alt="Behavioral Simulation" src="docs/assets/images/Simulation.png">
+<img width="2338" height="1634" alt="uXx_akLOufUzVUkRnU1vwNVACZeSAjMpFdIfNVxT3Tr_T1qYW2_RTU-ZBU28nUFVAPRzlk3Rd5N7lNQNU4s1dIwFnapXRPYFRhTyp4cyCA0gA4fZgk8JQkd3mAvyCqdm6OscXWESXklaAtg3UjLYmcmMBaMY3PANp376BxGXUce-WrWYqSmXu_jp_uG-g8p3" src="https://github.com/user-attachments/assets/cb2d204a-0d27-4d60-b182-cf83f10b3423" />
 
 <p><i>Figure 3: Behavioral simulation showing the VGA signals.</i></p>
 
 <h3>Implementation Results</h3>
 
-<img width="450" alt="Implementation Results" src="docs/assets/images/Implementation.png">
+<img width="1280" height="800" alt="ZKRumlARnu2ya4zzIPYdRwp9af1ZRLl26WBGXejwlpQ2AUqsJeow4I6o6V6tuKNrk6VFVkA-FjQhkyCXornc-4vKyFpuKIiQxdSprTOVVtUgfLezJEMbpcBhcEG6OIFc25jsvj0gJS7uJWEFuMZTG4suXrvyjP6YB-dqbX-0dntrC3nkDdhIOJrnhgKU6rn4" src="https://github.com/user-attachments/assets/682726cf-89e4-47b1-b598-8ca163164127" />
 
 <p><i>Figure 4: FPGA implementation and timing results.</i></p>
 
