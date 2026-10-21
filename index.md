@@ -23,7 +23,7 @@ During this week, I learned more about how the VGA signals work and how Verilog 
 
 ### VGA Colour Stripes Demonstration
 
-<img width="450" alt="Colour Stripes displayed on VGA monitor" src="YOUR_EXISTING_IMAGE_URL">
+<img width="450" alt="Colour Stripes displayed on VGA monitor" src="https://github.com/user-attachments/assets/9cb5cc04-3e07-4abe-b90d-b89c19be4825">
 
 *Figure 1: Original VGA Colour Stripes design displayed on the monitor using the Basys3 FPGA board.*
 
