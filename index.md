@@ -64,6 +64,35 @@ I plan to use the row and column coordinates from the VGA design to decide where
 
 The next step is to modify the original Colour Stripes module and test the new image in Vivado.
 
+
+<h3>Step 1 - Pink Background and White Face</h3>
+
+<p>
+First, I changed the RGB values to make the background
+pink. I then used row and column conditions to draw
+a white rectangle in the centre of the screen.
+</p>
+
+<img width="450" alt="Pink background and white face" src="https://github.com/user-attachments/assets/b4c68bca-b44e-4b0a-86e1-3ddd73fd3020">
+>
+
+<p><i>Figure 5: First stage of my Kawaii Kitty design showing the pink background and white rectangle.</i></p>
+
+<h3>Step 2 - Adding the Cat Ears</h3>
+
+<p>
+Next, I added two white ears using more if statements
+with row and column coordinates. I generated a new
+bitstream and tested the updated design on the
+Basys3 FPGA board.
+</p>
+
+<img width="450" alt="White cat face with ears" src="https://github.com/user-attachments/assets/1e5887ff-d2e5-43a9-992a-14c88a88cc44">
+">
+
+<p><i>Figure 6: Second stage of my Kawaii Kitty design with two ears.</i></p>
+
+
 ## **Template VGA Design**
 
 ### Project Set-Up
