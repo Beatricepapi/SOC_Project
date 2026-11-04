@@ -100,6 +100,24 @@ I found it easier to build the design one step at a time. First, I tested the ba
 
 Next week, I plan to add the eyes, nose and mouth to complete the cat's face.
 
+### Week 3 – Completing My Kawaii Kitty Design
+
+This week, I will continue working on my Kawaii Kitty VGA design in Vivado 2025.1.
+
+Last week, I successfully displayed the pink background, white face and two ears on the VGA monitor using the Basys3 FPGA board.
+
+My goal for this week is to complete the cat's face by adding two dark eyes, a small pink nose and a simple mouth.
+
+I plan to continue modifying `VGAColourStripes.v` using `if` statements with the `row` and `col` coordinates. I will use the same method as before to control the position, size and colour of each shape.
+
+Once the changes are complete, I will run the Behavioral Simulation to check the RGB outputs. I will then run synthesis and implementation, generate a new bitstream and test the updated design on the VGA monitor.
+
+I want to keep the design simple and make sure I understand how each part works before adding more features.
+
+### Next Steps
+
+After completing and testing the cat's face, I would like to add a switch to make the cat blink. My idea is to use one of the Basys3 switches to change the eyes between open and closed. I plan to work on this during Week 4.#
+
 ## **Template VGA Design**
 
 ### Project Set-Up
