@@ -92,6 +92,13 @@ Basys3 FPGA board.
 
 <p><i>Figure 6: Second stage of my Kawaii Kitty design with two ears.</i></p>
 
+### What I Learned This Week
+
+This week, I learned how to change the original VGA design to display my own shapes instead of colour stripes. I used the row and column values to control where the shapes appeared on the screen.
+
+I found it easier to build the design one step at a time. First, I tested the background and white rectangle, and then I added the ears. Testing each stage on the Basys3 board helped me check that my changes were working.
+
+Next week, I plan to add the eyes, nose and mouth to complete the cat's face.
 
 ## **Template VGA Design**
 
