@@ -52,6 +52,18 @@ During this week, I learned more about how the VGA signals work and how Verilog 
 
 Next week, I plan to start modifying the original design to display my own image. I have chosen a simple Kawaii Kitty design with a pink background and a white cat face.
 
+### Week 2 – Planning My Own VGA Design
+
+This week, I started planning my own VGA image after completing the original Colour Stripes example.
+
+I decided to create a simple Kawaii Kitty with a pink background and a white cat face. I chose this design because I wanted something different from the original example, but still simple enough to create using Verilog.
+
+My design will include two cat ears, two black eyes, a pink nose and a small mouth. I decided not to add too many details because I want to focus on understanding how the different shapes are displayed.
+
+I plan to use the row and column coordinates from the VGA design to decide where each shape should appear on the 640 x 480 screen.
+
+The next step is to modify the original Colour Stripes module and test the new image in Vivado.
+
 ## **Template VGA Design**
 
 ### Project Set-Up
