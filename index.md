@@ -137,6 +137,47 @@ After modifying the code, I generated a new bitstream and programmed the Basys3 
 
 *Figure 8: Updated Kawaii Kitty design with stepped edges to create a more rounded face.*
 
+
+### Improving the Cat's Ears
+
+After making the cat's face more rounded, I decided to improve the ears because they still looked too rectangular.
+
+I modified the ear conditions in `VGAColourStripes.v` by using smaller rectangles with different row and column values. I made each section narrower towards the top to create a more pointed shape.
+
+I used the same method for both ears so they would look similar.
+
+After changing the code, I generated a new bitstream and programmed the Basys3 board again. The updated ears displayed correctly on the VGA monitor, and I was happy with the new shape.
+
+<img width="450" alt="Kawaii Kitty with pixel-style ears" src="https://github.com/user-attachments/assets/d90902c7-3a57-4a5a-845a-3972a640e7a2">
+
+*Figure 9: Kawaii Kitty displayed on the VGA monitor after improving the ears using pixel-style shapes.*
+
+### What I learned this week
+
+This week, I completed the main parts of my Kawaii Kitty design. I added the eyes, nose and mouth, and then improved the shape of the face and ears.
+
+At first, the cat looked quite rectangular, but by combining smaller rectangular areas, I was able to make the edges look more rounded and the ears more pointed.
+
+I learned that I can create different shapes using simple `if` statements and pixel coordinates without needing complicated Verilog code.
+
+I also tested the changes on the Basys3 FPGA board to make sure that each version displayed correctly on the VGA monitor.
+
+I am happy with how my design has developed compared with the original Colour Stripes example.
+
+### My plan for next week
+
+For Week 4, I plan to make a few final improvements to my Kawaii Kitty design.
+
+First, I would like to change the nose from a rectangle into a small triangle using pixel coordinates. I also want to add three simple pixel-style whiskers on each side of the face.
+
+After that, I plan to use one of the switches on the Basys3 board to make the cat blink. When the switch is off, the eyes will remain open, and when the switch is on, the eyes will change into small horizontal lines to make them look closed.
+
+To do this, I will need to modify the Verilog code and connect the switch input to the graphics module.
+
+I will then run Behavioral Simulation, synthesis and implementation before testing the updated design on the VGA monitor.
+
+My goal is to finish with a simple Kawaii Kitty that has a few extra details and can blink using a physical switch on the FPGA board.
+
 ## **Template VGA Design**
 
 ### Project Set-Up
