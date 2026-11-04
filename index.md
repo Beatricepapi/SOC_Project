@@ -74,7 +74,6 @@ a white rectangle in the centre of the screen.
 </p>
 
 <img width="450" alt="Pink background and white face" src="https://github.com/user-attachments/assets/b4c68bca-b44e-4b0a-86e1-3ddd73fd3020">
->
 
 <p><i>Figure 5: First stage of my Kawaii Kitty design showing the pink background and white rectangle.</i></p>
 
@@ -88,7 +87,6 @@ Basys3 FPGA board.
 </p>
 
 <img width="450" alt="White cat face with ears" src="https://github.com/user-attachments/assets/1e5887ff-d2e5-43a9-992a-14c88a88cc44">
-">
 
 <p><i>Figure 6: Second stage of my Kawaii Kitty design with two ears.</i></p>
 
@@ -100,23 +98,38 @@ I found it easier to build the design one step at a time. First, I tested the ba
 
 Next week, I plan to add the eyes, nose and mouth to complete the cat's face.
 
-### Week 3 – Completing My Kawaii Kitty Design
 
-This week, I will continue working on my Kawaii Kitty VGA design in Vivado 2025.1.
+### Week 3 – Developing My Kawaii Kitty Design
 
-Last week, I successfully displayed the pink background, white face and two ears on the VGA monitor using the Basys3 FPGA board.
+This week, I continued working on my Kawaii Kitty VGA design in Vivado 2025.1.
 
-My goal for this week is to complete the cat's face by adding two dark eyes, a small pink nose and a simple mouth.
+During Week 2, I created the pink background, white rectangular face and two ears. My next task was to add the facial features to make the image look more like a cat.
 
-I plan to continue modifying `VGAColourStripes.v` using `if` statements with the `row` and `col` coordinates. I will use the same method as before to control the position, size and colour of each shape.
+### Adding the Eyes, Nose and Mouth
 
-Once the changes are complete, I will run the Behavioral Simulation to check the RGB outputs. I will then run synthesis and implementation, generate a new bitstream and test the updated design on the VGA monitor.
+I modified `VGAColourStripes.v` by adding more `if` statements using the `row` and `col` coordinates.
 
-I want to keep the design simple and make sure I understand how each part works before adding more features.
+First, I added two dark square eyes. I then added a small pink rectangle for the nose and a short dark line for the mouth.
 
-### Next Steps
+I kept the shapes simple because I wanted to use the same method that I had already used for the background, face and ears.
 
-After completing and testing the cat's face, I would like to add a switch to make the cat blink. My idea is to use one of the Basys3 switches to change the eyes between open and closed. I plan to work on this during Week 4.#
+After updating the code, I ran the Behavioral Simulation in Vivado and generated a new bitstream. I programmed the Basys3 FPGA board and tested the updated design on the VGA monitor.
+
+The cat's face displayed correctly with the eyes, nose and mouth in the positions I wanted.
+
+<img width="450" alt="Kawaii Kitty with eyes nose and mouth" src="https://github.com/user-attachments/assets/e611addf-145d-4c73-88c5-5115b12d91cc">
+
+*Figure 7: Kawaii Kitty design displayed on the VGA monitor after adding the eyes, nose and mouth.*
+
+### Improving the Shape of the Cat
+
+Although the facial features are now working, the cat's head still looks quite rectangular.
+
+I would like to improve the shape by using smaller squares to make the sides and corners look more rounded.
+
+My plan is to continue using `row` and `col` conditions in Verilog, but change the size and position of the white areas to create a more rounded, pixel-style cat face.
+
+I want to keep the design simple and avoid making major changes to the VGA timing code.
 
 ## **Template VGA Design**
 
