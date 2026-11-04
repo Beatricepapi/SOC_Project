@@ -123,13 +123,19 @@ The cat's face displayed correctly with the eyes, nose and mouth in the position
 
 ### Improving the Shape of the Cat
 
-Although the facial features are now working, the cat's head still looks quite rectangular.
+After adding the eyes, nose and mouth, I wanted to improve the shape of the cat's head because it still looked quite rectangular.
 
-I would like to improve the shape by using smaller squares to make the sides and corners look more rounded.
+I changed the conditions for the white face in `VGAColourStripes.v`. Instead of using one large rectangle, I combined smaller rectangular areas with different row and column values.
 
-My plan is to continue using `row` and `col` conditions in Verilog, but change the size and position of the white areas to create a more rounded, pixel-style cat face.
+This created small steps around the edges and bottom of the face, making it look more rounded in a pixel-art style.
 
-I want to keep the design simple and avoid making major changes to the VGA timing code.
+I kept the eyes, nose, mouth and ears the same.
+
+After modifying the code, I generated a new bitstream and programmed the Basys3 board again. The updated shape displayed correctly on the VGA monitor.
+
+<img width="450" alt="Kawaii Kitty with rounded pixel edges" src="https://github.com/user-attachments/assets/7fffbc9f-cdd7-41ff-a9ed-746b8d4ef039">
+
+*Figure 8: Updated Kawaii Kitty design with stepped edges to create a more rounded face.*
 
 ## **Template VGA Design**
 
