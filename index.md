@@ -127,6 +127,10 @@ After adding the eyes, nose and mouth, I wanted to improve the shape of the cat'
 
 I changed the conditions for the white face in `VGAColourStripes.v`. Instead of using one large rectangle, I combined smaller rectangular areas with different row and column values.
 
+<img width="450" alt="Kawaii Kitty with rounded pixel edges" src="https://github.com/user-attachments/assets/ac9e25a6-cd8b-4b39-8196-70a5778e9b2a">
+
+*Figure 8: Four overlapping rectangles used to create a rounded pixel-art shape.*
+
 This created small steps around the edges and bottom of the face, making it look more rounded in a pixel-art style.
 
 I kept the eyes, nose, mouth and ears the same.
@@ -135,7 +139,7 @@ After modifying the code, I generated a new bitstream and programmed the Basys3 
 
 <img width="450" alt="Kawaii Kitty with rounded pixel edges" src="https://github.com/user-attachments/assets/7fffbc9f-cdd7-41ff-a9ed-746b8d4ef039">
 
-*Figure 8: Updated Kawaii Kitty design with stepped edges to create a more rounded face.*
+*Figure 9: Updated Kawaii Kitty design with stepped edges to create a more rounded face.*
 
 
 ### Improving the Cat's Ears
@@ -150,7 +154,7 @@ After changing the code, I generated a new bitstream and programmed the Basys3 b
 
 <img width="450" alt="Kawaii Kitty with pixel-style ears" src="https://github.com/user-attachments/assets/d90902c7-3a57-4a5a-845a-3972a640e7a2">
 
-*Figure 9: Kawaii Kitty displayed on the VGA monitor after improving the ears using pixel-style shapes.*
+*Figure 10: Kawaii Kitty displayed on the VGA monitor after improving the ears using pixel-style shapes.*
 
 ### What I learned this week
 
