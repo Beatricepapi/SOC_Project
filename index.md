@@ -172,7 +172,7 @@ I am happy with how my design has developed compared with the original Colour St
 
 For Week 4, I plan to make a few final improvements to my Kawaii Kitty design.
 
-First, I would like to change the nose from a rectangle into a small triangle using pixel coordinates. I also want to add three simple pixel-style whiskers on each side of the face.
+First, I would like to change the nose and the mouth using pixel coordinates. Adding 2 pink cheeks and a bit of pink inside the ears too.
 
 After that, I plan to use one of the switches on the Basys3 board to make the cat blink. When the switch is off, the eyes will remain open, and when the switch is on, the eyes will change into small horizontal lines to make them look closed.
 
@@ -181,6 +181,36 @@ To do this, I will need to modify the Verilog code and connect the switch input 
 I will then run Behavioral Simulation, synthesis and implementation before testing the updated design on the VGA monitor.
 
 My goal is to finish with a simple Kawaii Kitty that has a few extra details and can blink using a physical switch on the FPGA board.
+
+
+### Week 4 - Testing My Final Static Kawaii Kitty Design
+
+I added pink sections inside the ears, two pink cheeks,
+dark brown square eyes, a small pink nose and a pixel-style
+mouth.
+
+I continued using `row` and `col` coordinates with `if`
+statements to control the positions and colours of the
+different shapes on the 640 x 480 VGA display.
+
+Once I completed the static design, I generated a new
+bitstream and programmed the Basys3 FPGA board.
+
+The updated Kawaii Kitty appeared on the VGA monitor
+with the pink background, white face and all the
+facial details in the correct positions.
+
+<img width="450" alt="Final static Kawaii Kitty displayed on VGA monitor" src="https://github.com/user-attachments/assets/0b844dcf-46fd-4939-b158-a52e9bd68cfc">
+
+*Figure 11: Completed static Kawaii Kitty design displayed on the VGA monitor using the Basys3 FPGA board.*
+
+I was happy to see the complete image displayed on the
+monitor because it showed how much my design had
+improved since the original Colour Stripes example.
+
+The next step is to add the blinking animation to make
+the cat more interactive.
+
 
 ## **Template VGA Design**
 
