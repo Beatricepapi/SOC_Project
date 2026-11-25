@@ -263,7 +263,7 @@ I was happy with the final result because I managed to add an animation while ke
 *Figure 12: Final Kawaii Kitty design showing the eyes closed during the blinking animation on the VGA monitor.*
 
 <video width="550" controls playsinline>
-  <source src="https://github.com/user-attachments/assets/7d66e54a-04ae-4fe4-b30b-070a543646d0" type="video/mp4">
+  <source src="{{ '/IMG_1303.mp4' | relative_url }}" type="video/mp4">
   Your browser does not support HTML video.
 </video>
 
