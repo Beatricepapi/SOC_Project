@@ -262,6 +262,7 @@ I was happy with the final result because I managed to add an animation while ke
 
 *Figure 12: Final Kawaii Kitty design showing the eyes closed during the blinking animation on the VGA monitor.*
 
+<img width="450" alt="Kawaii Kitty with closed eyes on VGA monitor" src="https://github.com/user-attachments/assets/b2f2b407-8c46-46a8-8c78-5af0d77a17ba">
 
 ### Understanding the RTL Schematic of My Final Design
 
