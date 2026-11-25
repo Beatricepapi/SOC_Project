@@ -1,6 +1,6 @@
 ---
 layout: home
-title: FPGA VGA Driver Project
+title: Kawaii Kitty - FPGA VGA Driver Project
 tags: fpga vga verilog
 categories: demo
 ---
@@ -212,7 +212,7 @@ The next step is to add the blinking animation to make
 the cat more interactive.
 
 
-### Testing the Blinking Animation on the Basys3 Board
+### Testing the Blinking Animation
 
 After completing the static Kawaii Kitty design, my final task was to make the cat blink automatically.
 
@@ -226,7 +226,7 @@ I checked `VGASync.v` to make sure the VGA timing and the row and column coordin
 
 I also updated `Testbench.v` by replacing `ColourStripes` with `KawaiiKitty` so that the testbench would reference my renamed graphics module.
 
-After updating the files, I generated a new bitstream and programmed the Basys3 FPGA board to test the design on the VGA monitor.
+After updating the files, I generated a new bitstream.
 
 The blinking animation worked successfully. The cat's eyes changed from dark brown squares to small horizontal lines before opening again, repeating approximately every three seconds without using a physical switch.
 
