@@ -49,7 +49,7 @@ This was important because I needed to make sure that the design could be implem
 
 <p><i>Figure 3: Behavioral simulation showing the VGA signals.</i></p>
 
-Behavioral simulation was an important part of understanding how the VGA driver works before testing it on the physical Basys3 board.
+Behavioral simulation was an important part of understanding how the VGA driver works before testing it on the physical board.
 
 I used the testbench provided by the lecturer to test the design and examine the signals in Vivado. The main signals I was interested in were the clock, horizontal synchronization (`hsync`), vertical synchronization (`vsync`), and the `row` and `col` coordinates.
 
