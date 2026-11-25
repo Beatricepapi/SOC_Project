@@ -238,18 +238,25 @@ I was happy with the final result because I managed to add an animation while ke
 
 ### Final Reflection
 
-During this project, I learned how to use Verilog and Vivado 2025.1 to create graphics on a VGA monitor using the Basys3 FPGA board.
+Looking back at the four weeks of this project, I can see how much my understanding of Verilog and FPGA design has improved. At the beginning, I was working with the Colour Stripes example provided by the lecturer, and I was mainly trying to understand how the VGA signals worked. By the end, I had developed my own Kawaii Kitty design with different shapes, colours and a blinking animation.
 
-I started with the original Colour Stripes example provided by the lecturer and gradually modified the design to create my own Kawaii Kitty image.
+One of the most important things I learned was how the FPGA uses the row and col coordinates to decide what appears on the screen. For example, when I wanted to draw the cat's face, I used conditions such as col >= 170 && col < 470 to define the horizontal boundaries of a rectangular area. I combined these conditions with the row values to control the height and position of each shape.
 
-I learned how to use row and column coordinates to position shapes on the screen, how to combine rectangles to create rounded-looking pixel-art edges, and how to control RGB values to display different colours.
+At first, I used one large white rectangle for the face, but I wasn't happy with how square it looked. I experimented with overlapping rectangles of different sizes to make the edges look more rounded. This helped me understand that I didn't need to create actual curves. By combining several rectangular regions using the || (OR) operator, I could create stepped edges that gave the cat a pixel-art appearance. I used a similar method for the ears, making the sections narrower towards the top.
 
-One of the most interesting parts of the project was adding the blinking animation. By using a counter in Verilog, I was able to make the eyes open and close automatically without needing an external switch.
+Another important part was understanding how RGB colours work. For example, I used 12'hFFF to display white and 12'hFAC for the pink background. I learned that the Basys3 VGA output uses 4 bits for each colour channel, allowing me to control the red, green and blue values separately.
 
-I also learned the importance of testing the design in stages and checking for errors in Vivado before generating a bitstream and programming the FPGA board.
+The biggest challenge in the final week was adding the blinking animation. Until that point, my design was static, meaning the image stayed the same on the screen. To make the eyes blink, I added a counter inside VGAKawaiiKitty.v that increases on every rising edge of the 25 MHz clock. I used the counter value to decide when the eyes should appear as dark brown squares and when they should change into thin horizontal lines.
 
-Overall, I am happy with my final Kawaii Kitty design and how it developed throughout the four weeks. This project helped me improve my understanding of FPGA design, VGA graphics and hardware implementation.
+For example, I used the condition blink_counter >= 27'd70833333 to control when the eyes close. Since the clock runs at 25 million cycles per second and the counter resets after 75 million cycles, the complete blinking cycle takes approximately three seconds.
 
+I also learned more about how the different Verilog files work together. VGASync.v generates the VGA timing and pixel coordinates, VGATop.v connects the different modules, and VGAKawaiiKitty.v controls the colours and appearance of the cat. Understanding these connections helped me see why changing a module name also required updating its reference in the top-level design and testbench.
+
+I encountered some problems during the project, including syntax errors and difficulties running Vivado simulation. These experiences showed me the importance of checking the error messages, making small changes at a time, and understanding which part of the design could be causing a problem.
+
+My favourite part was seeing the cat displayed on the real VGA monitor, especially when the blinking animation worked. It was satisfying to see that the coordinate conditions and counter I had been working with in Verilog could produce a visible result on the FPGA board.
+
+Overall, this project helped me understand that FPGA graphics are not just about drawing an image. They involve timing, digital logic, clock signals, coordinate comparisons and hardware implementation. I am happy with the way my Kawaii Kitty developed from the original Colour Stripes example into my own animated VGA design.
 
 ## **Template VGA Design**
 
