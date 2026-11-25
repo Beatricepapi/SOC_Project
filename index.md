@@ -35,17 +35,43 @@ During this week, I learned more about how the VGA signals work and how Verilog 
 
 <p><i>Figure 2: Vivado project setup and design sources.</i></p>
 
+This screenshot shows the Vivado project summary after running synthesis and implementation.
+
+During synthesis, Vivado converts the Verilog code into a hardware design that can be implemented on the FPGA. Implementation then places and routes the design using the FPGA's available resources.
+
+I also checked the timing results, particularly the Worst Negative Slack (WNS). A positive WNS means that the reported timing requirements have been met. The summary also shows the resource utilisation, including LUTs and flip-flops, which helped me understand how much of the FPGA was being used by the design.
+
+This was important because I needed to make sure that the design could be implemented successfully before generating the bitstream.
+
 <h3>Behavioral Simulation</h3>
 
 <img width="450" alt="Behavioral Simulation" src="https://github.com/user-attachments/assets/cb2d204a-0d27-4d60-b182-cf83f10b3423">
 
 <p><i>Figure 3: Behavioral simulation showing the VGA signals.</i></p>
 
+Behavioral simulation was an important part of understanding how the VGA driver works before testing it on the physical Basys3 board.
+
+I used the testbench provided by the lecturer to test the design and examine the signals in Vivado. The main signals I was interested in were the clock, horizontal synchronization (`hsync`), vertical synchronization (`vsync`), and the `row` and `col` coordinates.
+
+I learned that `hsync` controls the timing of each horizontal line, while `vsync` controls the timing of each frame. The `row` and `col` values indicate the pixel position, which is important because I later used these coordinates to create the different parts of my Kawaii Kitty design.
+
+Simulation helped me understand how the different Verilog modules work together without needing to program the FPGA every time I made a change.
+
 <h3>Implementation Results</h3>
 
 <img width="450" alt="Implementation Results" src="https://github.com/user-attachments/assets/682726cf-89e4-47b1-b598-8ca163164127">
 
 <p><i>Figure 4: FPGA implementation and timing results.</i></p>
+
+In this screenshot, I examined the signal waveforms to understand how the VGA driver behaves over time.
+
+I observed how the clock controls the progression of the design and how the synchronization signals change as the VGA timing counters advance. I also looked at the row and column signals, which determine the current position on the screen.
+
+For example, the VGA display uses a resolution of 640 × 480 pixels, and the timing logic also includes additional clock periods for the synchronization pulses and blanking intervals.
+
+Understanding these signals was useful when I started creating my own graphics because the `row` and `col` coordinates are what allow the FPGA to decide which colour should appear at each position.
+
+After simulation, synthesis and implementation were used to prepare the hardware design for the Basys3 FPGA board.
 
 
 ### Next Week
