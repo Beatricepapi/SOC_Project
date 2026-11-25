@@ -262,6 +262,8 @@ I was happy with the final result because I managed to add an animation while ke
 
 *Figure 12: Final Kawaii Kitty design showing the eyes closed during the blinking animation on the VGA monitor.*
 
+[**Watch my Kawaii Kitty blinking animation**](https://github.com/user-attachments/assets/ee2e159c-53b5-485e-b160-7ad48f4b6444)
+
 ### Understanding the RTL Schematic of My Final Design
 
 After completing my Kawaii Kitty design, I explored the RTL schematic in Vivado to understand how my Verilog code was represented as hardware.
