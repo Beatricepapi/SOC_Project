@@ -1,8 +1,8 @@
 ---
-title: Kawaii Kitty - FPGA VGA Driver Project
+Title: Kawaii Kitty - FPGA VGA Driver Project
 Author: Beatrice Papi
-tags: fpga vga verilog
-categories: demo
+Tags: fpga vga verilog
+Categories: demo
 ---
 
 Welcome to my FPGA VGA Driver Project! In this project, I will be using Verilog and Vivado 2025.1 to display graphics on a VGA monitor using the Basys3 FPGA board. I will first test the example provided by the lecturer and then create my own design.
