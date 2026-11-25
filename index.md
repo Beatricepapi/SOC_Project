@@ -262,7 +262,8 @@ I was happy with the final result because I managed to add an animation while ke
 
 *Figure 12: Final Kawaii Kitty design showing the eyes closed during the blinking animation on the VGA monitor.*
 
-[▶ Watch my final Kawaii Kitty blinking animation](https://beatricepapi.github.io/SOC_Project/IMG_1303.mp4)
+
+**[Click here to watch or download my Kawaii Kitty blinking animation](https://github.com/Beatricepapi/SOC_Project/blob/main/IMG_1303.mp4)**
 
 *Video 1: Final Kawaii Kitty blinking animation displayed on the VGA monitor.*
 
