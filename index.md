@@ -262,6 +262,83 @@ I was happy with the final result because I managed to add an animation while ke
 
 *Figure 12: Final Kawaii Kitty design showing the eyes closed during the blinking animation on the VGA monitor.*
 
+
+### Understanding the RTL Schematic of My Final Design
+
+After completing my Kawaii Kitty design, I explored the RTL schematic in Vivado to understand how my Verilog code was represented as hardware.
+
+I looked at the complete design first, then opened the Kawaii Kitty module to examine the internal logic in more detail.
+
+### Full RTL Schematic
+
+<img width="650" alt="Full RTL schematic of my VGA design" src="https://github.com/user-attachments/assets/172304fc-6de6-4b26-ae66-bb67e5f8a967">
+
+*Figure 13: Full RTL schematic showing the connections between the main modules of my VGA design.*
+
+This screenshot shows the complete RTL schematic of my project, including the Clocking Wizard (`clk_wiz_0`), `VGASync`, and `KawaiiKitty`.
+
+The Clocking Wizard generates the 25 MHz clock used by the VGA driver. The `VGASync` module generates the horizontal and vertical synchronization signals and provides the `row` and `col` coordinates.
+
+These coordinates are passed to `KawaiiKitty`, which determines the RGB colour values for each pixel.
+
+On the right side of the schematic, I can also see three multiplexers (`RTL_MUX`). These correspond to the conditional assignments in `VGATop.v`, where `vid_on` controls whether the RGB outputs display the image colours or zero outside the visible display area.
+
+This helped me understand how the different modules work together to display my cat on the VGA monitor.
+
+### Kawaii Kitty RTL Schematic
+
+<img width="650" alt="Internal RTL schematic of Kawaii Kitty" src="https://github.com/user-attachments/assets/4f01e1df-e805-4c3d-bd2f-87ae6923be66">
+
+*Figure 14: Internal RTL schematic of my Kawaii Kitty module.*
+
+After looking at the complete schematic, I opened the `KawaiiKitty` module to examine the logic inside it.
+
+I noticed that the internal schematic was much more complicated than the top-level view. This is because the Verilog code contains many coordinate comparisons and conditions to create the different parts of the cat.
+
+For example, the face, ears, eyes, cheeks, nose and mouth are all created using conditions involving `row` and `col`.
+
+Vivado represents these conditions using logic components connected by signals.
+
+The schematic also includes logic for the blinking counter, which controls when the eyes are open or closed.
+
+I found it interesting that the simple `if` statements I had written in Verilog were represented by many connected logic components.
+
+### Zooming Into the Kawaii Kitty Logic
+
+<img width="650" alt="Zoomed-in RTL logic of Kawaii Kitty" src="https://github.com/user-attachments/assets/56c15326-2b81-4abb-86c2-0d0a330ad6ce">
+
+*Figure 15: Zoomed-in section of the Kawaii Kitty RTL schematic showing comparison operators and logic gates.*
+
+I zoomed into part of the Kawaii Kitty schematic to understand the logic components more clearly.
+
+In this screenshot, I could identify comparison operators such as `RTL_GEQ` (greater than or equal to), `RTL_LT` (less than), and `RTL_AND` (logical AND).
+
+For example, in `VGAKawaiiKitty.v`, I used the following condition to draw part of the white cat face:
+
+```verilog
+if (col >= 170 && col < 470 &&
+    row >= 161 && row < 228)
+```
+
+This checks whether the current pixel is inside a particular rectangular area.
+
+The comparison operators check the boundaries, while the AND logic combines the conditions. When all the conditions are true, the pixel is assigned the white RGB colour.
+
+I used this method to create the different shapes of my Kawaii Kitty.
+
+Looking at the zoomed-in schematic helped me understand how the coordinate conditions in my Verilog code are translated into digital logic.
+
+### What I Learned From the Schematic
+
+Exploring the schematics helped me understand the relationship between my Verilog code and the hardware logic represented by Vivado.
+
+The full schematic showed how the modules communicate, while the internal Kawaii Kitty schematic showed the logic required to create the image and blinking animation.
+
+By zooming in, I was able to identify the comparison operators and AND gates related to the coordinate conditions I used throughout the project.
+
+This helped me understand that displaying a simple pixel-art image on an FPGA requires many logic operations working together.
+
+
 ### Final Reflection
 
 Looking back at the four weeks of this project, I can see how much my understanding of Verilog and FPGA design has improved. At the beginning, I was working with the Colour Stripes example provided by the lecturer, and I was mainly trying to understand how the VGA signals worked. By the end, I had developed my own Kawaii Kitty design with different shapes, colours and a blinking animation.
